@@ -47,7 +47,8 @@ defmodule OneSignal.Param do
 			  isIos: nil,
 			  isAndroid: nil,
 			  apns_alert: %{},
-			  android_background_layout: %{}
+			  android_background_layout: %{},
+			  ios_attachments: %{}
 	
 	def to_string_key({k, v}) do
 		{to_string(k), stringify_map(v)}
