@@ -16,8 +16,8 @@ defmodule OneSignal do
 
   def endpoint, do: "https://onesignal.com/api/v1"
 
-  def new do
-    %OneSignal.Param{}
+  def new(opts \\ %{}) do
+    struct(OneSignal.Param, opts)
   end
 
   def auth_header do
